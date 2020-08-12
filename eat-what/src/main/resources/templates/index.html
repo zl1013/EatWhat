@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.337.css}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-2 column">
+            </div>
+            <div class="col-md-8 column">
+                <div class="page-header">
+                    <h1>
+                        It helps you choose what to eat.<br><small>Enter the meal you want to eat in the input box below.</small>
+                    </h1>
+                </div>
+            </div>
+            <div class="col-md-2 column">
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-3 column">
+            </div>
+            <div class="col-md-6 column">
+                <form class="form-horizontal" role="form" th:action="@{/menu}" method="post">
+                    <div class="form-group">
+                        <label  class="col-sm-3 control-label">dish name</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" name="name" required="required"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-3 control-label">dish name</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" name="name" required="required"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-3 control-label">dish name</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" name="name" required="required"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-4 col-sm-10" >
+                            <input type="submit" class="btn btn-default" value="Help me"></input>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3 column">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
